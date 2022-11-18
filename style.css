@@ -1,0 +1,70 @@
+:root {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+
+	--background: #181719;
+	--font: #ffffff;
+}
+
+body {
+	background-color: var(--background);
+	color: var(--font);
+	padding: 2.625rem 4.75rem 1.5rem;
+	margin: 0;
+}
+
+header,
+main {
+	max-width: 1288px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a,
+a:visited {
+	color: var(--font);
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+h2 {
+	display: block;
+	margin: 0;
+	padding: 0.5rem;
+	border: 1px var(--font) solid;
+	font-size: 0.875rem;
+	text-transform: uppercase;
+}
+
+header a {
+	text-decoration: none;
+}
+
+ul {
+	display: flex;
+	margin: 0;
+	padding-left: 0;
+	justify-content: space-between;
+	gap: 5.375rem;
+	list-style: none;
+}
+
+li {
+	display: inline-block;
+	font-size: 1.125rem;
+	padding: 0.5rem 0;
+}
+
+li:first-child {
+	font-weight: 700;
+	border-bottom: 1px var(--font) solid;
+}
