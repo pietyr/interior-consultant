@@ -45,6 +45,11 @@ header {
 	align-items: center;
 }
 
+span.material-symbols-outlined {
+	display: none;
+	font-size: 2.125rem;
+}
+
 h2 {
 	display: block;
 	margin: 0;
@@ -115,10 +120,12 @@ section.description a {
 
 section.photo {
 	position: relative;
+	object-fit: contain;
 }
 
 section.photo > img {
 	display: block;
+	width: 100%;
 	max-width: 738px;
 }
 
@@ -180,4 +187,42 @@ footer a,
 footer a:visited {
 	font-weight: 700;
 	color: var(--gray-2);
+}
+
+@media (max-width: 1023px) {
+	main {
+		flex-direction: column;
+	}
+
+	h1 {
+		font-size: 2.25rem;
+	}
+
+	section.description p {
+		font-size: 0.875rem;
+	}
+
+	section.description a {
+		font-size: 0.875rem;
+	}
+
+	div.name-wrapper span:first-child {
+		font-size: 0.75rem;
+	}
+
+	div.name-wrapper span:last-child {
+		font-size: 0.625rem;
+	}
+
+	h3 {
+		font-size: 1.125rem;
+	}
+
+	nav {
+		display: none;
+	}
+
+	span.material-symbols-outlined {
+		display: block;
+	}
 }
