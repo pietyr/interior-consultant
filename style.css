@@ -98,6 +98,8 @@ section.description {
 	justify-content: center;
 	max-width: 410px;
 	gap: 2.5rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
 }
 
 h1 {
@@ -181,6 +183,7 @@ footer {
 	margin-top: 5.5rem;
 	font-weight: 500;
 	color: var(--gray-2);
+	font-size: 0.875rem;
 }
 
 footer a,
@@ -192,6 +195,10 @@ footer a:visited {
 @media (max-width: 1023px) {
 	main {
 		flex-direction: column;
+	}
+
+	body {
+		padding: 1.25rem 0.75rem 1.5rem;
 	}
 
 	h1 {
@@ -206,6 +213,11 @@ footer a:visited {
 		font-size: 0.875rem;
 	}
 
+	div.author-wrapper {
+		right: 0.75rem;
+		padding: 1rem 1.125rem 1.5rem;
+	}
+
 	div.name-wrapper span:first-child {
 		font-size: 0.75rem;
 	}
@@ -216,6 +228,7 @@ footer a:visited {
 
 	h3 {
 		font-size: 1.125rem;
+		margin-bottom: 0;
 	}
 
 	ul {
@@ -242,5 +255,9 @@ footer a:visited {
 		display: block;
 		position: relative;
 		z-index: 2;
+	}
+
+	footer p {
+		margin: 0;
 	}
 }
