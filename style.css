@@ -218,11 +218,29 @@ footer a:visited {
 		font-size: 1.125rem;
 	}
 
-	nav {
-		display: none;
+	ul {
+		/* display: none; */
+		visibility: hidden;
+		position: fixed;
+		flex-direction: column;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		z-index: 1;
+		background-color: var(--background);
+		gap: 2rem;
+		justify-content: center;
+		align-items: center;
+	}
+
+	li {
+		padding: unset;
 	}
 
 	span.material-symbols-outlined {
 		display: block;
+		position: relative;
+		z-index: 2;
 	}
 }
